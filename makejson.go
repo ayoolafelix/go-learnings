@@ -18,7 +18,7 @@ func main() {
 	scanner.Scan()
 	address := scanner.Text()
 
-	personLocation := map[string]string{name: address}
+	personLocation := map[string]string{"name": name, "address": address}
 
 	jsonData, err := json.Marshal(personLocation)
 
